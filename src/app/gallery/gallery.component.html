@@ -1,0 +1,13 @@
+
+<ng-content select=".gallery-header"></ng-content>
+<ng-container *ngFor="let image of images; index as i">
+  <ng-container *ngTemplateOutlet="imageGallery; context: {image: image, isActive: i == activeIndex}">
+  </ng-container>
+</ng-container>
+
+<app-gallery-thumbnail-list *ngIf="enableThumbnails">
+  <ng-container *ngFor="let image of images, index as i">
+    <ng-container *ngTemplateOutlet="thumbnail; context: {image, isActive: i == activeIndex}"></ng-container>
+  </ng-container>
+</app-gallery-thumbnail-list>
+
