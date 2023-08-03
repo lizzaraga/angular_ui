@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
     "https://picsum.photos/id/237/600/600",
     "https://picsum.photos/id/50/600/600",
     "https://picsum.photos/id/16/600/600",
+    "https://picsum.photos/id/32/600/600",
+    "https://picsum.photos/id/78/600/600",
   ]
 
   ngOnInit(): void {
